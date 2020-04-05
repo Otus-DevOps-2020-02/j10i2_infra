@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gcloud compute instances create reddit-vm  --image=reddit-full-1586081929
+gcloud compute instances create reddit-vm  --image=reddit-full-1586111495

@@ -37,7 +37,6 @@
 			"type": "shell",
             "script": "files/unit.sh",
             "execute_command": "sudo {{.Path}}"
-		}
-		
+		}		
     ]
 }
