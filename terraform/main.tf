@@ -4,28 +4,25 @@ terraform {
 }
 
 provider "google" {
-  # Версия провайдера
-  version = "2.15"
-  # ID проекта
-  project = "lustrous-fabric-271615"
-
-  region = "europe-west-1"
+  version = "2.15.0"
+  project = var.project
+  region = var.region
 }
 resource "google_compute_instance" "app" {
   name         = "reddit-app"
   machine_type = "g1-small"
-  zone         = "europe-west1-b"
+  zone         = var.zone
 
   # определение загрузочного диска
   boot_disk {
     initialize_params {
     
-      image = "reddit-base"
+      image = var.disk_image
     }
   }
 
   metadata = {
-    ssh-keys = "appuser:${file("~/.ssh/appuser.pub")}"
+    ssh-keys = "appuser:${file(var.public_key_path)}"
   }
 
   tags = ["reddit-app"]
@@ -44,7 +41,7 @@ resource "google_compute_instance" "app" {
     host = self.network_interface[0].access_config[0].nat_ip
     user        = "appuser"
     agent       = false
-    private_key = file("~/.ssh/appuser")
+    private_key = file(var.private_key)
   }
 
   provisioner "file" {
