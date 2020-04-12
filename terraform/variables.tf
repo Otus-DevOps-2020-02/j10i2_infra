@@ -12,8 +12,8 @@ variable public_key_path {
 }
 
 variable private_key {
-	
-	description = "Path to the private key used for ssh accsess"
+
+  description = "Path to the private key used for ssh accsess"
 }
 
 variable disk_image {
@@ -21,8 +21,8 @@ variable disk_image {
 }
 
 variable zone {
-	
-	description = "Zone for instance"
-	default="europe-west1-b"
+
+  description = "Zone for instance"
+  default     = "europe-west1-b"
 
 }
