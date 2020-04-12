@@ -1,6 +1,6 @@
 terraform {
   # Версия terraform
-  required_version = "0.12.24"
+  required_version > "0.12.0"
 }
 
 provider "google" {
@@ -16,7 +16,7 @@ resource "google_compute_instance" "app" {
   # определение загрузочного диска
   boot_disk {
     initialize_params {
-    
+
       image = var.disk_image
     }
   }
