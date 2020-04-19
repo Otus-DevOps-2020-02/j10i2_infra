@@ -26,3 +26,15 @@ variable zone {
   default     = "europe-west1-b"
 
 }
+
+variable app_disk_image {
+
+  description = "Disk image for reddit app"
+  default     = "app_disk_image"
+}
+
+variable db_disk_image {
+
+  description = "Disk image for reddit db"
+  default     = "db_disk_image"
+}
