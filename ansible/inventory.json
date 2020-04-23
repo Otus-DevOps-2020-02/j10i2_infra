@@ -1,0 +1,207 @@
+{
+  "_meta": {
+    "hostvars": {
+      "reddit-app": {
+        "ansible_host": "34.77.35.66",
+        "canIpForward": false,
+        "cpuPlatform": "Intel Haswell",
+        "creationTimestamp": "2020-04-21T10:02:37.949-07:00",
+        "deletionProtection": false,
+        "disks": [
+          {
+            "autoDelete": true,
+            "boot": true,
+            "deviceName": "persistent-disk-0",
+            "diskSizeGb": "10",
+            "guestOsFeatures": [
+              {
+                "type": "VIRTIO_SCSI_MULTIQUEUE"
+              },
+              {
+                "type": "UEFI_COMPATIBLE"
+              }
+            ],
+            "index": 0,
+            "interface": "SCSI",
+            "kind": "compute#attachedDisk",
+            "licenses": [
+              "https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/licenses/ubuntu-1604-xenial"
+            ],
+            "mode": "READ_WRITE",
+            "source": "https://www.googleapis.com/compute/v1/projects/lustrous-fabric-271615/zones/europe-west1-b/disks/reddit-app",
+            "type": "PERSISTENT"
+          }
+        ],
+        "fingerprint": "qin3UKq6Ljg=",
+        "id": "5617272765199587778",
+        "image": null,
+        "kind": "compute#instance",
+        "labelFingerprint": "42WmSpB8rSM=",
+        "machineType": "g1-small",
+        "machineType_selflink": "https://www.googleapis.com/compute/v1/projects/lustrous-fabric-271615/zones/europe-west1-b/machineTypes/g1-small",
+        "metadata": {
+          "ssh-keys": "appuser:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCd0a7EGO8OO7FnbwlpLXll1peXdffEgS6e9MVdjVYbVuv/lyZJ+RZiEXvB8MWn2WmhQTZC/sXl2HOJu1tyal/G43SlWIFDkZnD7mUOmRVfCOz+IK4uXIzgUthntyszrm7V6zwmvGNNE3yNCqIEJlGnfWPOlH7Yo/EGmGCSeMW4kGygl2aE5teGSzXt6zO6puaH7clxj/FUCBkQTXCBG8LcrRFxVEv3qegNdqCeVr5Miniywh1ep/78GxXQ/yFjYn29yBOympHiiP0JVNWDyQOvt57HddeZy7gzPxYYgtuaUXIsJrHvCqHvpkMPT3uuHKRPA/I5Vuy+wlN2OYIWRJ/mkqXhpOkhpk1wIS1up8aRAH6OysSPEFAPF+KfthDK+zpn7/YaQ5ZByZoe36mScTle0Bu9jPPV977Pq986cqYK6gQAK5v+8debPzEbBeXsNGe7v/cVKj14Hw/DnRHTy7/7OShI4FsXmFp/ehPZkFFRMY7wjIiNJglVJjHzVjbC6v8= appuser\n"
+        },
+        "name": "reddit-app",
+        "networkInterfaces": [
+          {
+            "accessConfigs": [
+              {
+                "kind": "compute#accessConfig",
+                "name": "external-nat",
+                "natIP": "34.77.35.66",
+                "networkTier": "PREMIUM",
+                "type": "ONE_TO_ONE_NAT"
+              }
+            ],
+            "fingerprint": "ODC82lQFHDo=",
+            "kind": "compute#networkInterface",
+            "name": "nic0",
+            "network": {
+              "name": "default",
+              "region": "global",
+              "selfLink": "https://www.googleapis.com/compute/v1/projects/lustrous-fabric-271615/global/networks/default"
+            },
+            "networkIP": "10.132.15.230",
+            "subnetwork": {
+              "name": "default",
+              "region": "europe-west1",
+              "selfLink": "https://www.googleapis.com/compute/v1/projects/lustrous-fabric-271615/regions/europe-west1/subnetworks/default"
+            }
+          }
+        ],
+        "project": "lustrous-fabric-271615",
+        "scheduling": {
+          "automaticRestart": true,
+          "onHostMaintenance": "MIGRATE",
+          "preemptible": false
+        },
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/lustrous-fabric-271615/zones/europe-west1-b/instances/reddit-app",
+        "shieldedInstanceConfig": {
+          "enableIntegrityMonitoring": true,
+          "enableSecureBoot": false,
+          "enableVtpm": true
+        },
+        "shieldedInstanceIntegrityPolicy": {
+          "updateAutoLearnPolicy": true
+        },
+        "startRestricted": false,
+        "status": "RUNNING",
+        "tags": {
+          "fingerprint": "M-ggixIz-AU=",
+          "items": [
+            "reddit-app"
+          ]
+        },
+        "zone": "europe-west1-b",
+        "zone_selflink": "https://www.googleapis.com/compute/v1/projects/lustrous-fabric-271615/zones/europe-west1-b"
+      },
+      "reddit-db": {
+        "ansible_host": "34.76.95.110",
+        "canIpForward": false,
+        "cpuPlatform": "Intel Haswell",
+        "creationTimestamp": "2020-04-21T10:02:34.271-07:00",
+        "deletionProtection": false,
+        "disks": [
+          {
+            "autoDelete": true,
+            "boot": true,
+            "deviceName": "persistent-disk-0",
+            "diskSizeGb": "10",
+            "guestOsFeatures": [
+              {
+                "type": "VIRTIO_SCSI_MULTIQUEUE"
+              },
+              {
+                "type": "UEFI_COMPATIBLE"
+              }
+            ],
+            "index": 0,
+            "interface": "SCSI",
+            "kind": "compute#attachedDisk",
+            "licenses": [
+              "https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/licenses/ubuntu-1604-xenial"
+            ],
+            "mode": "READ_WRITE",
+            "source": "https://www.googleapis.com/compute/v1/projects/lustrous-fabric-271615/zones/europe-west1-b/disks/reddit-db",
+            "type": "PERSISTENT"
+          }
+        ],
+        "fingerprint": "dX6Qa3SMMkg=",
+        "id": "4582139621994043846",
+        "image": null,
+        "kind": "compute#instance",
+        "labelFingerprint": "42WmSpB8rSM=",
+        "machineType": "g1-small",
+        "machineType_selflink": "https://www.googleapis.com/compute/v1/projects/lustrous-fabric-271615/zones/europe-west1-b/machineTypes/g1-small",
+        "metadata": {
+          "ssh-keys": "appuser:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCd0a7EGO8OO7FnbwlpLXll1peXdffEgS6e9MVdjVYbVuv/lyZJ+RZiEXvB8MWn2WmhQTZC/sXl2HOJu1tyal/G43SlWIFDkZnD7mUOmRVfCOz+IK4uXIzgUthntyszrm7V6zwmvGNNE3yNCqIEJlGnfWPOlH7Yo/EGmGCSeMW4kGygl2aE5teGSzXt6zO6puaH7clxj/FUCBkQTXCBG8LcrRFxVEv3qegNdqCeVr5Miniywh1ep/78GxXQ/yFjYn29yBOympHiiP0JVNWDyQOvt57HddeZy7gzPxYYgtuaUXIsJrHvCqHvpkMPT3uuHKRPA/I5Vuy+wlN2OYIWRJ/mkqXhpOkhpk1wIS1up8aRAH6OysSPEFAPF+KfthDK+zpn7/YaQ5ZByZoe36mScTle0Bu9jPPV977Pq986cqYK6gQAK5v+8debPzEbBeXsNGe7v/cVKj14Hw/DnRHTy7/7OShI4FsXmFp/ehPZkFFRMY7wjIiNJglVJjHzVjbC6v8= appuser\n"
+        },
+        "name": "reddit-db",
+        "networkInterfaces": [
+          {
+            "accessConfigs": [
+              {
+                "kind": "compute#accessConfig",
+                "name": "external-nat",
+                "natIP": "34.76.95.110",
+                "networkTier": "PREMIUM",
+                "type": "ONE_TO_ONE_NAT"
+              }
+            ],
+            "fingerprint": "X6NYva6brIE=",
+            "kind": "compute#networkInterface",
+            "name": "nic0",
+            "network": {
+              "name": "default",
+              "region": "global",
+              "selfLink": "https://www.googleapis.com/compute/v1/projects/lustrous-fabric-271615/global/networks/default"
+            },
+            "networkIP": "10.132.15.229",
+            "subnetwork": {
+              "name": "default",
+              "region": "europe-west1",
+              "selfLink": "https://www.googleapis.com/compute/v1/projects/lustrous-fabric-271615/regions/europe-west1/subnetworks/default"
+            }
+          }
+        ],
+        "project": "lustrous-fabric-271615",
+        "scheduling": {
+          "automaticRestart": true,
+          "onHostMaintenance": "MIGRATE",
+          "preemptible": false
+        },
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/lustrous-fabric-271615/zones/europe-west1-b/instances/reddit-db",
+        "shieldedInstanceConfig": {
+          "enableIntegrityMonitoring": true,
+          "enableSecureBoot": false,
+          "enableVtpm": true
+        },
+        "shieldedInstanceIntegrityPolicy": {
+          "updateAutoLearnPolicy": true
+        },
+        "startRestricted": false,
+        "status": "RUNNING",
+        "tags": {
+          "fingerprint": "NQyRUqL7UTU=",
+          "items": [
+            "reddit-db"
+          ]
+        },
+        "zone": "europe-west1-b",
+        "zone_selflink": "https://www.googleapis.com/compute/v1/projects/lustrous-fabric-271615/zones/europe-west1-b"
+      }
+    }
+  },
+  "all": {
+    "children": [
+      "ungrouped"
+    ]
+  },
+  "ungrouped": {
+    "hosts": [
+      "reddit-app",
+      "reddit-db"
+    ]
+  }
+}
