@@ -1,14 +1,14 @@
 ---
-- name: Install ruby and Bundler
-  hosts: all
+- name: Install ruby and other
+  hosts: app
   become: true
   roles:
-    -app
-  tasks:
+   - app
+#  tasks:
    # Установим в цикле все зависимости
-  - name: Install ruby and rubygems and required packages
-    apt: "name={{ item }} state=present"
-    with_items:
-      - ruby-full
-      - ruby-bundler
-      - build-essential
+#  - name: Install ruby and rubygems and required packages
+#    apt: "name={{ item }} state=present"
+#    with_items:
+#      - ruby-full
+#      - ruby-bundler
+#      - build-essential
