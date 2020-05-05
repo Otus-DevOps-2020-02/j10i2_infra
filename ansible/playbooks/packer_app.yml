@@ -2,6 +2,8 @@
 - name: Install ruby and Bundler
   hosts: all
   become: true
+  roles:
+    -app
   tasks:
    # Установим в цикле все зависимости
   - name: Install ruby and rubygems and required packages
